@@ -59,4 +59,9 @@ margin-bottom: 20px
 }
 .btn-submit:hover{
     background-color:rgba(255, 153, 0, 0.6) ;
+
+}
+
+.show-password{
+  color: rgb(183, 183, 244);
 }

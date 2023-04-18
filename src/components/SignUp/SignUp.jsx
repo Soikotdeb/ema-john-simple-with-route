@@ -2,10 +2,23 @@ import React, { useContext, useState } from 'react';
 import './SignUp.css'
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProvider';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye, faEyeSlash, } from '@fortawesome/free-solid-svg-icons'
 
 const SignUp = () => {
     const [error, setError]= useState('')
     const {createUser} = useContext(AuthContext);
+    const [show, setShow]=  useState(false);
+    const [confirms, setConfirms]= useState(false);
+
+
+    const handleTogglePassword = () => {
+        setShow(!show);
+      };
+
+      const handleConfirmPassword = () =>{
+        setConfirms(!confirms);
+      }
 
 
 const handleSignUp = event =>{
@@ -48,11 +61,44 @@ return
                 </div>
                 <div className="from-control">
                     <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="" required />
+                    <div style={{ position: "relative" }}>
+             <input  type={show ? "text" : "password"}  name="password" id="" required />
+        <span
+          style={{
+            position: "absolute",
+            right: "90px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            cursor: "pointer",           
+            
+          }}
+          onClick={handleTogglePassword}
+        >
+          <FontAwesomeIcon className='show-password' icon={show ? faEyeSlash : faEye} />
+        </span>
+      </div>
                 </div>
+                     
+
+
                 <div className="from-control">
                     <label htmlFor="confirm"> Confirm Password</label>
-                    <input type="password" name="confirm" id="" required />
+                    <div style={{ position: "relative" }}>
+             <input  type={confirms ? "text" : "password"}  name="password" id="" required />
+        <span
+          style={{
+            position: "absolute",
+            right: "90px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            cursor: "pointer",           
+            
+          }}
+          onClick={handleConfirmPassword}
+        >
+          <FontAwesomeIcon className='show-password' icon={confirms ? faEyeSlash : faEye} />
+        </span>
+      </div>
                 </div>
                <input className='btn-submit' type="submit" value="Sign Up" />
             </form>
