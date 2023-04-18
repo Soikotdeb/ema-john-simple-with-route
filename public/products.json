@@ -260,6 +260,32 @@
         "quantity": 0
     },
     {
+        "id": "c54e12ef-5d5e-4c8a-982c-43a7c1234567",
+        "category": "Men's Pants",
+        "name": "TechFit Compression Pants",
+        "seller": "Under Armour",
+        "price": 49.99,
+        "stock": 25,
+        "ratings": 4.5,
+        "ratingsCount": 100,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlygXBpSxUPhcsjVp8XOLCOvsdaf3ckTSbWcr3tz0j4Q0hXG4Nr9ZOSvSzXLtf4K1KKHI&usqp=jpg",
+        "shipping": 15,
+        "quantity": 0
+        },
+        {
+            "id": "f84d6146-23f6-482b-9c9e-56b5de456789",
+            "category": "Men's Pants",
+            "name": "Cargo Pants",
+            "seller": "Levi's",
+            "price": 79.95,
+            "stock": 20,
+            "ratings": 4.3,
+            "ratingsCount": 60,
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmUxG4ONOBPR-FC0cSNZTCC2YlHBT5ZJXavH_fE_zlhplc0fedmHBYUxN-RlAYcvFd-Fk&usqp=jpg",
+            "shipping": 8,
+            "quantity": 0
+            },
+    {
         "id": "0298e695-1f9b-49b1-9961-8a8460f95b1c",
         "category": "Men's Boot",
         "name": "TERREX FREE HIKER GORE-TEX HIKING SHOES",

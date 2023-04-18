@@ -1,4 +1,11 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@700;800&family=Poppins&display=swap');
+
+
+
+
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -57,4 +64,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
