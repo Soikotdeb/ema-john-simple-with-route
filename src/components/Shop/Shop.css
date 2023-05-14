@@ -25,3 +25,104 @@
     justify-content: space-between;
     align-items: center;
 }
+
+
+
+  
+  .pagination {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    justify-content: center; /* center buttons */
+    align-items: center; /* center buttons vertically */
+  }
+  
+  .pagination button {
+    font-weight: bold;
+    margin-right: 15px;
+    font-style: italic;
+    border: none; /* remove button borders */
+    background-color: white; /* set button background to white */
+    padding: 5px 10px; /* add padding to buttons */
+    border-radius: 5px; /* add rounded corners to buttons */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* add box shadow to buttons */
+    transition: all 0.2s ease-in-out; /* add smooth transition effect */
+  }
+  
+  .pagination button:hover {
+    background-color: coral; /* change background color on hover */
+    color: white; /* change text color on hover */
+    transform: translateY(-3px); /* add slight upward movement on hover */
+  }
+  
+  .pagination .selected {
+    background-color: coral;
+    color: white; /* change text color for selected button */
+  }
+  
+
+/* added website theme */
+body {
+  background-color: white;
+  color: black;
+}
+
+.dark-theme {
+  background-color: rgb(136, 123, 123);
+  color: white;
+}
+
+
+/* Hide the checkbox */
+#theme-toggle {
+  display: none;
+}
+
+/* Style the label as a toggle switch */
+#theme-toggle + label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  padding: 2px;
+}
+
+/* Add a border to the label */
+#theme-toggle + label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the toggle switch when it's checked */
+#theme-toggle:checked + label::before {
+  transform: translateX(28px);
+}
+
+/* Style the toggle switch label text */
+#theme-toggle + label::after {
+  content: 'OFF';
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 38px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Style the toggle switch label text when it's checked */
+#theme-toggle:checked + label::after {
+  content: 'ON';
+  left: 12px;
+  color: #333;
+}
