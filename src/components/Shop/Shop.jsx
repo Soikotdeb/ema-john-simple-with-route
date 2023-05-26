@@ -47,7 +47,7 @@ const Shop = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        `http://localhost:5000/products?page=${currentpage}&limit=${itemsPerPage}`
+        `https://ema-john-server-neon.vercel.app/products?page=${currentpage}&limit=${itemsPerPage}`
       );
       const data = await response.json();
       setProducts(data);
@@ -58,7 +58,7 @@ const Shop = () => {
   useEffect(() => {
     const storedCart = getShoppingCart();
     const ids = Object.keys(storedCart);
-    fetch(`http://localhost:5000/productsByIds`, {
+    fetch(`https://ema-john-server-neon.vercel.app/productsByIds`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
